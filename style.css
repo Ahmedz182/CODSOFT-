@@ -151,7 +151,7 @@ animation: moveUpDown 2s ease-in-out infinite;
         
   }
 
-  @media only screen and (min-width: 850px) {
+  @media only screen and (min-width: 751px) {
   
 
     .heroSecction{
