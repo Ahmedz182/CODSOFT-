@@ -409,11 +409,11 @@ label{
     font-weight: 600;
 }
 input,textarea{
-    outline: none;
+outline: none;
 padding: 9px;
 border: none;
 border-radius: 6px;
-min-width: 25dvw;
+min-width: 15dvw;
 }
 
 .sub{
