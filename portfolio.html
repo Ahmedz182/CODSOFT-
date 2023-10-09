@@ -217,30 +217,30 @@
 <h1 class="text-uppercase mb-3 fw-bold"  data-aos="fade-up-left">Get In Touch</h1>
 <span class="d-flex flex-column align-content-start">
 <span class=" mb-3"><i class="fa fa-envelope fw-bold text-decoration-none about_desc">
-    <a class="text-danger text-decoration-none" href="mailto:ahmedmughal3182@gmail.com">Ahmedmughal3182@gamil.com</a></i></span>
+    <a class="text-danger text-decoration-none" href="mailto:ahmedmughal3182@gmail.com">  Ahmedmughal3182@gamil.com</a></i></span>
     <span class="float-start">
-        <i class="fa fa-phone-square fw-bold text-decoration-none about_desc"><a  class="text-danger text-decoration-none"href="tel:+923357035717"> (+92) 335 7035 717</a></i></span>
+        <i class="fa fa-phone-square fw-bold text-decoration-none about_desc"><a  class="text-danger text-decoration-none"href="tel:+923357035717">  (+92) 335 7035 717</a></i></span>
 </span>
 <div  data-aos="fade-up-right">
 <p class="h3 text-start fw-bold mt-2">Contact Us</p>
 
-<form action="submit">
+<form id="contactForm" >
     <div class="forms">
     <div class="d-flex flex-column m-1">           
     <label class="me-2 mt-2 mb-2" for="First Name">First Name</label>
-    <input type="text " placeholder="First Name" name="" id=""> 
+    <input type="text " placeholder="First Name" required name="first" id="1"> 
 </div>
 <div class="d-flex flex-column m-1">           
     <label class="me-2 mt-2 mb-2" for="last Name">Last Name</label>
-    <input type="text " placeholder="Last Name" name="" id=""> 
+    <input type="text " placeholder="Last Name" required name="last" id="2"> 
 </div>
 <div class="d-flex flex-column m-1">           
 <label class="me-2 mt-2 mb-2" for="Email">Email</label>
-<input type="email " placeholder="Email Address" name="" id=""> 
+<input type="email " placeholder="Email Address" required name="email" id="3"> 
 </div>
 <div class="d-flex flex-column m-1 mb-5">           
 <label class="me-2 mt-2 mb-2" for="last Name">Message</label>
-<textarea type="text " placeholder="Your Precious Message Here.."rows="4" cols="40" name="" id=""></textarea> 
+<textarea type="text " placeholder="Your Precious Message Here.."required rows="4" cols="40" name="message" id="4"></textarea> 
 <input type="submit"  class="mt-3 sub" value="Submit">
 </div>
 
@@ -280,32 +280,8 @@
 <footer class="footer">
     <p class="text-center mt-3"><i class="fa fa-copyright me-2" aria-hidden="true"></i>All Right resverd 2023 | Ahmed Mughal</p>
 </footer>
+
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-// Initialize AOS
-AOS.init();
-document.addEventListener('DOMContentLoaded', function() {
-    setTimeout(function() {
-        document.querySelector('.loader-wrapper').classList.add('loaded');
-    }, 5000); 
-});
-
-  
-  window.onscroll = function() {
-            showGoHomeButton();
-        };
-
-        function showGoHomeButton() {
-            var button = document.querySelector('.home-button');
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                button.style.display = 'block';
-            } else {
-                button.style.display = 'none';
-            }
-        }
-
-        
-</script>
-
+<script src="style.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </html>
