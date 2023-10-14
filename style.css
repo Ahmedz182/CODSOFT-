@@ -413,6 +413,7 @@ outline: none;
 padding: 9px;
 border: none;
 border-radius: 6px;
+overflow: hidden;
 min-width: 10dvw;
 }
 
